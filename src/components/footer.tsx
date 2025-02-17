@@ -4,8 +4,7 @@ const Footer = () => {
     return (
         <footer className="flex flex-col items-center justify-center">
             
-            {/* show links if sidebar is hidden because we are on mobile */}
-            <div className="sm:hidden flex flex-wrap justify-center items-center">
+            <div className="flex flex-wrap justify-center items-center">
 
                 <Link href="https://www.linkedin.com/in/andersontseng/" className="p-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">Linkedin</Link>
                 

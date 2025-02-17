@@ -5,7 +5,7 @@ import { ProjectList } from "@/components/project-list";
 import Header from "../components/header"
 import Footer from "@/components/footer";
 
-import HeroImage from '@/../public/sunrise.jpg'
+import HeroImage from '@/../public/clouds/sunrise.webp'
 import Image from "next/image";
 
 export default function Home() {

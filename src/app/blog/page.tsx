@@ -4,7 +4,7 @@ import Image from "next/image";
 import Header from "@/components/header"
 import Footer from "@/components/footer";
 
-import HeroImage from '@/../public/sunset.jpg'
+import HeroImage from '@/../public/clouds/sunset.webp'
 
 import { posts } from "@/app/blog/posts"
 
