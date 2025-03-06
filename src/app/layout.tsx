@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
+import { Lato } from "next/font/google";
+
 import "./globals.css";
 import CanvasBackground from "@/components/background";
+
+const lato = Lato({
+  weight: '400',
+  variable: "--font-lato",
+  subsets: ["latin"],
+});
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -26,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased ${lato.className}`}
       >
         <CanvasBackground/>
         {children}
