@@ -146,12 +146,12 @@ const Interact = () => {
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-col md:flex-row gap-4 w-full">
-                <div className="h-[300px] min-w-[200px] border-2 border-slate-600 rounded z-10 flex items-center justify-center">
+                <div className="h-[300px] min-w-[200px] w-full border-2 border-slate-600 rounded z-10 flex items-center justify-center">
                     <Image 
                         src={page.image} 
                         height='300' 
                         width='200' 
-                        className="h-[297px] w-fit object-cover rounded-sm z-0" 
+                        className="h-[297px] w-full object-cover rounded-sm z-0" 
                         alt="sorry, alt not implemented" 
                         priority
                     />
