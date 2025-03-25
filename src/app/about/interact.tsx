@@ -118,6 +118,8 @@ const Interact = () => {
         const saved = localStorage.getItem('ABOUT_currentPage');
         if (saved) {
             setCurrentPage(parseInt(saved));
+        } else {
+            setCurrentPage(1);
         }
     }, []);
 
