@@ -110,6 +110,7 @@ const pages: VNPage[] = [
 
 const Interact = () => {
     const [currentPage, setCurrentPage] = React.useState(0);
+    const [nextPage, setNextPage] = React.useState(1);
     const [hasMounted, setHasMounted] = React.useState(false);
 
     // After component mounts, update from localStorage
@@ -131,10 +132,12 @@ const Interact = () => {
 
     const handleNextPage = () => {
         let new_page = (currentPage + 1) % pages.length;
+        const next_page = (new_page + 1) % pages.length;            
         if (new_page == 0) {
             new_page = 1;
         }
         setCurrentPage(new_page);
+        setNextPage(next_page);
     };
 
     // Use a consistent page during server rendering
@@ -149,6 +152,15 @@ const Interact = () => {
                         height='300' 
                         width='200' 
                         className="h-[297px] w-[400px] object-cover rounded-sm z-0" 
+                        alt="sorry, alt not implemented" 
+                        priority
+                    />
+                    {/* preload next image so that it is ready (is this the optimal way?? seems like it works...)*/}
+                    <Image 
+                        src={pages[nextPage].image} 
+                        height='300' 
+                        width='200' 
+                        className="hidden" 
                         alt="sorry, alt not implemented" 
                         priority
                     />
