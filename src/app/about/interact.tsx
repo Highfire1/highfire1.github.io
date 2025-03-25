@@ -146,7 +146,7 @@ const Interact = () => {
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-col md:flex-row gap-4 w-full">
-                <div className="h-[300px] min-w-[200px] w-full border-2 border-slate-600 rounded z-10 flex items-center justify-center">
+                <div className="h-[300px] min-w-[200px] w-full md:w-lg border-2 border-slate-600 rounded z-10 flex items-center justify-center">
                     <Image 
                         src={page.image} 
                         height='300' 
