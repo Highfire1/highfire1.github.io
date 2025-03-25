@@ -151,7 +151,7 @@ const Interact = () => {
                         src={page.image} 
                         height='300' 
                         width='200' 
-                        className="h-[297px] w-fit md:w-[400px] object-cover rounded-sm z-0" 
+                        className="h-[297px] w-fit object-cover rounded-sm z-0" 
                         alt="sorry, alt not implemented" 
                         priority
                     />
