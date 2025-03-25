@@ -36,7 +36,7 @@ const pages: VNPage[] = [
     },
     {
         title: "Who is Anderson Tseng?",
-        image: "/about/anderson_1.jpeg",
+        image: "/about/anderson_5.png",
         text: "What else do you want to know about me?\n;-;",
         buttonText1: "hobbies?"
     },
@@ -145,13 +145,13 @@ const Interact = () => {
 
     return (
         <div className="flex flex-col gap-4">
-            <div className="flex flex-row gap-4 w-full">
-                <div className="h-[300px] min-w-[200px] border-2 border-slate-600 rounded z-10">
+            <div className="flex flex-col md:flex-row gap-4 w-full">
+                <div className="h-[300px] min-w-[200px] border-2 border-slate-600 rounded z-10 flex items-center justify-center">
                     <Image 
                         src={page.image} 
                         height='300' 
                         width='200' 
-                        className="h-[297px] w-[400px] object-cover rounded-sm z-0" 
+                        className="h-[297px] w-fit md:w-[400px] object-cover rounded-sm z-0" 
                         alt="sorry, alt not implemented" 
                         priority
                     />
