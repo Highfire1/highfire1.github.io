@@ -21,7 +21,7 @@ const CanvasBackground = () => {
         resizeCanvas();
 
         // Create stars
-        const stars = Array(200).fill(null).map(() => ({
+        const stars = Array(50).fill(null).map(() => ({
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
             size: Math.random() * 2,

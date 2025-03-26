@@ -5,7 +5,6 @@ import { ProjectList } from "@/components/project-list";
 import Header from "../components/header"
 import Footer from "@/components/footer";
 
-import HeroImage from '@/../public/clouds/sunrise.webp'
 import Image from "next/image";
 
 export default function Home() {
@@ -15,7 +14,12 @@ export default function Home() {
       <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full px-4 flex gap-4 flex-col py-2">
         <Header />
 
-        <Image src={HeroImage} className="h-[200px] w-full object-cover" alt="picture of sunrise" priority />
+        <div className="relative h-52 w-full">
+          <Image 
+            src="/clouds/sunrise.webp" fill={true}
+            className="object-cover" alt="picture of sunrise" priority
+          />
+        </div>
 
 
         <div className="flex gap-4 w-full">
@@ -48,9 +52,9 @@ export default function Home() {
 
             <div className="border-2 border-gray-800 rounded p-2">
               <h3 className="font-bold">Quick Facts:</h3>
-                <p>📍Vancouver, Canada</p>
-                <p>🏫Studying Data Science @ Simon Fraser Univ.</p>
-                <p>🖥️Windows 11 {"<"}3</p>
+              <p>📍Vancouver, Canada</p>
+              <p>🏫Studying Data Science @ Simon Fraser Univ.</p>
+              <p>🖥️Windows 11 {"<"}3</p>
             </div>
 
             <div className="border-2 border-gray-800 rounded p-2">
