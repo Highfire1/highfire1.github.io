@@ -186,6 +186,25 @@ const Interact = () => {
 
             {/* inventory, to be implemented */}
             <div className="h-[200px] w-full border-2 border-gray-800 rounded p-2">
+                <h2>Articles I think you should read:</h2>
+                <ul className="list-disc pl-4">
+                    <li>
+                        <a href="https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/" 
+                           className="text-blue-600 hover:text-blue-800 underline"
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Falsehoods Programmers Believe About Names
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://grugbrain.dev/" 
+                           className="text-blue-600 hover:text-blue-800 underline"
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            The Grug Brained Developer
+                        </a>
+                    </li>
+                </ul>
                 
             </div>
         </div>
