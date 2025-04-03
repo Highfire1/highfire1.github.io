@@ -36,7 +36,7 @@ const pages: VNPage[] = [
     },
     {
         title: "Who is Anderson Tseng?",
-        image: "/about/anderson_5.png",
+        image: "/about/anderson_5.jpg",
         text: "What else do you want to know about me?\n;-;",
         buttonText1: "hobbies?"
     },
@@ -66,7 +66,7 @@ const pages: VNPage[] = [
     },
     {
         title: "Who is Anderson Tseng?",
-        image: "/about/books.png",
+        image: "/about/books.jpg",
         text: "I'm very slowly reading through the diskworld series by terry pratchett. slow progress but we'll get there eventually.\nIn general i'm a really big fan of any story with sci-fi and fantasy themes.",
         buttonText1: "GNU Terry Pratchett"
     },
@@ -78,13 +78,13 @@ const pages: VNPage[] = [
     },
     {
         title: "Who is Anderson Tseng?",
-        image: "/about/construction.png",
+        image: "/about/construction.jpg",
         text: "well, this is awkward...\nIt looks like this website is still under construction.",
         buttonText1: "aw."
     },
     {
         title: "Who is Anderson Tseng?",
-        image: "/about/shambles.png",
+        image: "/about/shambles.jpg",
         text: "it looks like Anderson is tired of writing dialogue and needs to go eat dinner.\nBut he'll be back. soon!",
         buttonText1: "mhm."
     },
@@ -102,7 +102,7 @@ const pages: VNPage[] = [
     },
     {
         title: "Who is Anderson Tseng?",
-        image: "/about/sunset_2.png",
+        image: "/about/sunset_2.jpg",
         text: "Alright, that's all the content I have for you today.\nThanks for clicking through <3",
         buttonText1: "restart."
     },
