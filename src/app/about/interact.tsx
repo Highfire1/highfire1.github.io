@@ -162,7 +162,6 @@ const Interact = () => {
                         width='200' 
                         className="hidden" 
                         alt="sorry, alt not implemented" 
-                        priority
                     />
                 </div>
 
