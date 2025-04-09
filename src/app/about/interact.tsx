@@ -155,14 +155,8 @@ const Interact = () => {
                         alt="sorry, alt not implemented" 
                         priority
                     />
-                    {/* preload next image so that it is ready (is this the optimal way?? seems like it works...)*/}
-                    <Image 
-                        src={pages[nextPage].image} 
-                        height='300' 
-                        width='200' 
-                        className="hidden" 
-                        alt="sorry, alt not implemented" 
-                    />
+                    {/* preload next image... i wish there was a better way to do this*/}
+                    <link rel="preload" href={pages[nextPage].image} as="image"></link>
                 </div>
 
                 <div className="w-full border-2 border-gray-800 rounded p-2">
