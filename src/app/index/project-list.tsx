@@ -1,14 +1,7 @@
-import ProjectSummary, { type ProjectSummaryProps } from '@/components/project-summary'
+import ProjectSummary, { type ProjectSummaryProps } from '@/app/index/project-summary'
 
 export function ProjectList() {
     const projects: ProjectSummaryProps[] = [
-        {
-            imageUrl: '/projects/lcsc.png',
-            imageAlt: '',
-            title: 'Langara Computer Science Club',
-            description: "Revived and presided over the LCSC, hosting 50+ events and two in-person hackathons.",
-            url: 'https://langaracs.ca/',
-        },
         {
             imageUrl: '/projects/planner.png',
             imageAlt: 'Langara College Planner Screenshot',
@@ -25,14 +18,6 @@ export function ProjectList() {
             description: "A wearable hat capable of sensing obstacles around the person wearing it (submitted to Hack the North 2022)",
             url: 'https://devpost.com/software/insight4',
             stack: ['Arduino']
-        },
-        {
-            imageUrl: '/projects/vshacks.png',
-            imageAlt: 'vsHacks Website Screenshot',
-            title: 'vsHacks',
-            description: "Lead organizer of Vancouver Students Hackathon, a virtual hackathon for high school students across Greater Vancouver.",
-            // dateWorked: '2022 - 2025',
-            url: 'https://vshacks.github.io/',
         },
         {
             imageUrl: '/projects/joreborn.png',

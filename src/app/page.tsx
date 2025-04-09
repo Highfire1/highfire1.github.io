@@ -1,11 +1,12 @@
 // import Image from "next/image";
 
 // import Link from "next/link";
-import { ProjectList } from "@/components/project-list";
+import { ProjectList } from "@/app/index/project-list";
 import Header from "../components/header"
 import Footer from "@/components/footer";
 
 import Image from "next/image";
+import { ExperienceList } from "./index/experience-list";
 
 export default function Home() {
   return (
@@ -29,6 +30,11 @@ export default function Home() {
             <div className="border-2 border-gray-800 rounded p-2">
               <h1 className="font-bold">Welcome to my website!</h1>
               <p>This page contains some of the projects that I have worked on, as well as links to other places that I am on the internet.</p>
+            </div>
+
+            <div className="border-2 border-gray-800 rounded p-2">
+              <h3 className="pb-2 font-bold">Experience:</h3>
+              <ExperienceList />
             </div>
 
             <div className="border-2 border-gray-800 rounded p-2">
@@ -68,7 +74,7 @@ export default function Home() {
             </div>
 
             <div className="border-2 border-gray-800 rounded p-2">
-              <h3 className="font-bold">Stack:</h3>
+              <h3 className="font-bold">Tools:</h3>
               <ul className="list-disc pl-5">
                 <li>Preferred: Python, Next.js, Tailwind</li>
                 <li>Proficient: Java, C++, Bash, PHP, SQL, QGIS</li>
