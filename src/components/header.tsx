@@ -2,27 +2,32 @@ import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header className=" ">
-            <nav className="w-full mx-auto flex items-center justify-between ">
-            
-            <div className="justify-start">
-                <Link href="/" className="text-xl font-bold text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
-                <span className="min-[300px]:hidden">AT</span>
-                <span className="hidden min-[300px]:inline">Anderson Tseng</span>
-                </Link>
-            </div>
+        <header className="w-full">
 
-            <div className="flex sm:gap-4 justify-end grow max-[99px]:w-full text-lg font-bold">
-                <Link href="/about" className="p-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
-                About
-                </Link>
-                <Link href="/blog" className="p-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
-                Blog
-                </Link>
-                {/* <Link href="/contact" className="text-gray-500 hover:text-gray-900">
-                Contact
-                </Link> */}
-            </div>
+            <nav className="w-full mx-auto grid grid-cols-[1fr_auto] items-center text-xl">
+
+                <div className="@container justify-start col-start-1 w-full">
+                    {/* Container queries are so freaking cool */}
+                    <Link href="/" className="block py-2 p w-fit font-bold text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                        <span className="block @min-[8ch]:hidden w-fit">AT</span>
+                        <span className="hidden @min-[8ch]:block @min-[10ch]:hidden w-fit">Anderson</span>
+                        <span className="hidden @min-[10ch]:block @min-[13ch]:hidden w-fit">Anderson T</span>
+                        <span className="hidden @min-[13ch]:block w-fit">Anderson Tseng</span>
+                    </Link>
+                </div>
+
+                <div className="justify-self-end gap-2 sm:gap-4 flex justify-end font-bold">
+                    <Link href="/about" className="py-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                        About
+                    </Link>
+                    {/* <Link href="/gallery" className="py-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                        Gallery
+                    </Link> */}
+                    <Link href="/blog" className="py-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                        Blog
+                    </Link>
+                </div>
+
             </nav>
         </header>
     )

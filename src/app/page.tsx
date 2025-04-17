@@ -10,6 +10,7 @@ import { ExperienceList } from "./index/experience-list";
 
 export default function Home() {
   return (
+    // yes 200px is somewhat arbitrary idc
     <div className="flex flex-col items-center w-full min-w-[200px]">
 
       <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full px-4 flex gap-4 flex-col py-2">
