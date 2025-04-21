@@ -17,7 +17,7 @@ export default function Home() {
         <Header />
 
         <div className="relative h-52 w-full">
-          <Image 
+          <Image
             src="/clouds/sunrise.webp" fill={true}
             className="object-cover" alt="picture of sunrise" priority
           />
@@ -47,7 +47,7 @@ export default function Home() {
 
           <div className="w-[200px] hidden sm:flex flex-col gap-4">
 
-            <div className="border-2 border-gray-800 rounded p-2">
+            <div className="border-2 border-gray-800 rounded px-2 py-1">
               <h3 className="font-bold">Links:</h3>
               <ul className="list-disc pl-5">
                 <li><a className="hover:underline" href="https://www.linkedin.com/in/andersontseng/">LinkedIn</a></li>
@@ -57,14 +57,14 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="border-2 border-gray-800 rounded p-2">
+            <div className="border-2 border-gray-800 rounded px-2 py-1">
               <h3 className="font-bold">Quick Facts:</h3>
               <p>📍Vancouver, Canada</p>
               <p>🏫Studying Data Science @ Simon Fraser Univ.</p>
               <p>🖥️Windows 11 {"<"}3</p>
             </div>
 
-            <div className="border-2 border-gray-800 rounded p-2">
+            <div className="border-2 border-gray-800 rounded px-2 py-1">
               <h3 className="font-bold">Interests:</h3>
               <ul className="list-disc pl-5">
                 <li>D&D</li>
@@ -74,7 +74,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="border-2 border-gray-800 rounded p-2">
+            <div className="border-2 border-gray-800 rounded px-2 py-1">
               <h3 className="font-bold">Tools:</h3>
               <ul className="list-disc pl-5">
                 <li>Preferred: Python, Next.js, Tailwind</li>
@@ -82,6 +82,10 @@ export default function Home() {
                 <li>Want to learn: Rust</li>
               </ul>
             </div>
+
+            {/* <div className="border-2 border-gray-800 rounded p-2">
+              <iframe className="w-[180px] h-[180px] border-none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+            </div> */}
 
 
           </div>
