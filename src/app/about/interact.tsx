@@ -200,6 +200,29 @@ const Interact = () => {
                 </ul>
                 
             </div>
+
+            {/* To be implemented if I show up more than twice */}
+            {/* <div className="h-[200px] w-full border-2 border-gray-800 rounded p-2">
+                <h2>In the Media:</h2>
+                <ul className="list-disc pl-4">
+                    <li>
+                        <a href="https://www.burnabynow.com/local-news/police-investigating-theft-of-sfu-sign-on-burnaby-mountain-10295321" 
+                           className="text-blue-600 hover:text-blue-800 underline"
+                           target="_blank" 
+                           rel="noopener noreferrer">&quot;Police investigating theft of SFU sign on Burnaby Mountain&quot; (unattributed photo)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.langaravoice.ca/affordable-housing-near-campus-remains-a-distant-dream-for-students/" 
+                           className="text-blue-600 hover:text-blue-800 underline"
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            &quot;Affordable housing near campus remains a distant dream for students&quot; (quoted in article)
+                        </a>
+                    </li>
+                </ul>
+                
+            </div> */}
         </div>
     );
 };
