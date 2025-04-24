@@ -50,7 +50,7 @@ export default function Home() {
             <div className="border-2 border-gray-800 rounded px-2 py-1">
               <h3 className="font-bold">Links:</h3>
               <ul className="list-disc pl-5">
-                <li><a className="hover:underline" href="https://www.linkedin.com/in/andersontseng/">LinkedIn</a></li>
+                <li><a className="hover:underline" href="https://www.linkedin.com/in/andersontseng/">Linkedin</a></li>
                 <li><a className="hover:underline" href="https://www.instagram.com/anderson_wootdidoo/">Instagram</a></li>
                 <li><a className="hover:underline" href="https://github.com/highfire1">Github</a></li>
                 <li><a className="hover:underline" href="https://devpost.com/Highfire1">Devpost</a></li>
