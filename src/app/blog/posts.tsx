@@ -177,7 +177,7 @@ h3 {
     cursor: pointer;
 }
 
-p {
+.postcontainer > p {
     margin: 1em 0;
     line-height: 1.6;
     font-size: 16px;

@@ -31,16 +31,18 @@ export default async function Page({
                 <Header />
 
                 <div className="w-full">
+                    <Link href="/blog" className="text-gray-500 hover:text-gray-700">← Back to all posts</Link>
+
                     <h1 className="text-2xl font-bold">{post.title}</h1>
                     <p className="p-0 m-0">Published on {new Date(post.published).toLocaleDateString("en-US", {
                         weekday: "long",
                         year: "numeric",
                         month: "long",
                         day: "numeric",
-                    })}
+                    })}.
                     </p>
                     <div
-                        className="mt-4"
+                        className="mt-4 postcontainer"
                         dangerouslySetInnerHTML={{ __html: post.post }}
                     />
                 </div>
