@@ -119,8 +119,11 @@ const Interact = () => {
         const saved = localStorage.getItem('ABOUT_currentPage');
         if (saved) {
             setCurrentPage(parseInt(saved));
+            const next_page = (parseInt(saved) + 1) % pages.length;  
+            setNextPage(next_page);          
         } else {
             setCurrentPage(1);
+            setNextPage(2);
         }
     }, []);
 
@@ -142,6 +145,7 @@ const Interact = () => {
 
     // Use a consistent page during server rendering
     const page = pages[currentPage];
+    const n_page = pages[nextPage];
 
     return (
         <div className="flex flex-col gap-4">
@@ -156,7 +160,7 @@ const Interact = () => {
                         priority
                     />
                     {/* preload next image... i wish there was a better way to do this*/}
-                    <link rel="preload" href={pages[nextPage].image} as="image"></link>
+                    <link rel="preload" href={n_page.image} as="image"></link>
                 </div>
 
                 <div className="w-full border-2 border-gray-800 rounded p-2">
