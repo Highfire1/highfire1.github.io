@@ -22,7 +22,7 @@ export const posts: BlogPost[] = [
         title: "CyberSci 2024",
         url: "cybersci-2024",
         published: new Date("2024-11-23"),
-        teaser: "My experience at CyberSci 2024",
+        teaser: "My experience at CyberSci 2024.",
         post: `
 <style>
 .center {
@@ -75,7 +75,22 @@ This can be fixed by checking for usernames in the message and replacing it with
         post: `
         <body>
         <img src="../blog/safety factor map.png" alt="Safety Factor Map" id="mapImage">
-        <img src="../blog/legend.png" alt="Map Legend" id="legend">
+        <style>
+            button {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                cursor: pointer;
+                background-color: #56AE57;
+                border-radius: 4px;
+            }
+            button:hover {
+                background-color: #77DD77;
+            }
+        </style>
+        <button onclick="window.open('../blog/safety factor map.png', '_blank')">
+            View in full resolution (opens in new tab).
+        </button>
     </body>
         `
     },
