@@ -7,23 +7,23 @@ interface BlogPost {
 }
 
 export const posts: BlogPost[] = [
-// to create a new blog post entry, copy the following template and paste it below the last entry in the array
-// I really need to move this to a notion api or something because this is REALLY bad...
+    // to create a new blog post entry, copy the following template and paste it below the last entry in the array
+    // I really need to move this to a notion api or something because this is REALLY bad...
 
-//     {
-//         title: "TITLE_OF_POST",
-//         url: "URL_OF_POST",
-//         published: new Date("2021-11-21"),
-//         teaser: "BRIEF_DESCRIPTION_OF_THE_POST",
-//         post: `
-// YOUR_CONTENT_HERE`
-//     },
-{
-            title: "CyberSci 2024",
-            url: "cybersci-2024",
-            published: new Date("2024-11-23"),
-            teaser: "My experience at CyberSci 2024",
-            post: `
+    //     {
+    //         title: "TITLE_OF_POST",
+    //         url: "URL_OF_POST",
+    //         published: new Date("2021-11-21"),
+    //         teaser: "BRIEF_DESCRIPTION_OF_THE_POST",
+    //         post: `
+    // YOUR_CONTENT_HERE`
+    //     },
+    {
+        title: "CyberSci 2024",
+        url: "cybersci-2024",
+        published: new Date("2024-11-23"),
+        teaser: "My experience at CyberSci 2024",
+        post: `
 <style>
 .center {
   display: block;
@@ -66,7 +66,19 @@ p {
 <h3 id="chatbot-2-949-">Chatbot 2 (949)</h3>
 <p>When users send a message, they send it in the form <code>&quot;RandomName9000 : what is my email?\`</code>. There is also a session token that is set which is the user&#39;s username in base64. Some calls would send a message with one user in the message, and a completely different message in the session cookie. 
 This can be fixed by checking for usernames in the message and replacing it with the real username, which is the session token decoded with base64.</p>`
-        },
+    },
+    {
+        title: "Vancouver Earthquake Risk Map",
+        url: "earthquake-map",
+        published: new Date("2024-04-11"),
+        teaser: "A risk map for buildings across Greater Vancouver. Created as part of a GIS course.",
+        post: `
+        <body>
+        <img src="../blog/safety factor map.png" alt="Safety Factor Map" id="mapImage">
+        <img src="../blog/legend.png" alt="Map Legend" id="legend">
+    </body>
+        `
+    },
     {
         title: "My position on nuclear power",
         url: "nuclear-power",
