@@ -24,16 +24,19 @@
 :root[data-theme="light"] {
   background-color: var(--color-background-light);
   color: var(--color-background-dark);
-  transition: background-color 1s, color 1s;
 }
 
 :root[data-theme="dark"] {
   background-color: var(--color-background-dark);
   color: var(--color-background-light);
-  transition: background-color 1s, color 1s;
 }
 
 :root[data-theme="pastel"] {
   background-color: var(--color-background-pastel);
+}
+
+/* this is so that we have transition when changing theme, but not on page load */
+.theme-transition,
+.theme-transition * {
   transition: background-color 1s, color 1s;
 }
