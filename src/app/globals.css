@@ -36,7 +36,6 @@
 }
 
 /* this is so that we have transition when changing theme, but not on page load */
-.theme-transition,
-.theme-transition * {
+.theme-transition {
   transition: background-color 1s, color 1s;
 }
