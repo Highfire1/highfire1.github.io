@@ -1,23 +1,39 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-card: hsl(207 97% 12%);
+  --color-background-light: hsl(0 0% 100%);
+  --color-background-dark: hsl(0, 0%, 5%);
+  --color-background-pastel: #cfb7e0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  [data-theme="light"] {
+    --color-card: hsl(207 97% 12%);
+  }
+  [data-theme="dark"] {
+    --color-card: hsl(0 0% 96%);
+  }
+  [data-theme="pastel"] {
+    --color-card: hsl(291 46% 83%);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
+:root[data-theme="light"] {
+  background-color: var(--color-background-light);
+  color: var(--color-background-dark);
+  transition: background-color 1s, color 1s;
+}
+
+:root[data-theme="dark"] {
+  background-color: var(--color-background-dark);
+  color: var(--color-background-light);
+  transition: background-color 1s, color 1s;
+}
+
+:root[data-theme="pastel"] {
+  background-color: var(--color-background-pastel);
+  transition: background-color 1s, color 1s;
 }

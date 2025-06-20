@@ -49,7 +49,7 @@ export function ExperienceList() {
                     fill
                     className="object-cover rounded"
                 />
-                <div className="w-full h-full relative z-10 p-2 hover:opacity-0  dark:bg-black bg-white dark:opacity-90 opacity:90  transition-opacity duration-500">
+                <div className="w-full h-full relative z-10 p-2 hover:opacity-0  dark:bg-black bg-white opacity-80  transition-opacity duration-500">
                     <h2 className="text-lg font-bold">{project.title}</h2>
                     <p className="text-sm pb-2">{project.dateWorked}</p>
                     <p className="text-sm" dangerouslySetInnerHTML={{ __html: project.description }}></p>

@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+import { ThemeProvider as NextThemesProvider } from 'next-themes'
 
 import "./globals.css";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import CanvasBackground from "@/components/background";
 
 const lato = Lato({
@@ -31,13 +33,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+
       <body
         className={`antialiased ${lato.className}`}
       >
-        <CanvasBackground/>
-        {children}
+        {/* <CanvasBackground /> */}
+
+
+        <NextThemesProvider 
+          enableSystem
+          enableColorScheme
+          // disableTransitionOnChange
+          defaultTheme="system"
+        >
+          {children}
+        </NextThemesProvider>
+
       </body>
-    </html>
+
+    </html >
   );
 }

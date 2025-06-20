@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ChangeThemeButton } from './theme-button'
 
 const Header = () => {
     return (
@@ -6,7 +7,7 @@ const Header = () => {
 
             <nav className="w-full mx-auto grid grid-cols-[1fr_auto] items-center text-xl">
 
-                <div className="@container justify-start col-start-1 w-full">
+                <div className="@container justify-start col-start-1 w-full  align-middle">
                     {/* Container queries are so freaking cool */}
                     <Link href="/" className="block py-2 p w-fit font-bold text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
                         <span className="block @min-[8ch]:hidden w-fit">AT</span>
@@ -16,7 +17,7 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <div className="justify-self-end gap-2 sm:gap-4 flex justify-end font-bold">
+                <div className="justify-self-end gap-2 sm:gap-4 flex justify-end items-center font-bold align-middle">
                     <Link href="/about" className="py-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
                         About
                     </Link>
@@ -26,6 +27,7 @@ const Header = () => {
                     <Link href="/blog" className="py-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
                         Blog
                     </Link>
+                    <ChangeThemeButton/>
                 </div>
 
             </nav>

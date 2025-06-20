@@ -30,8 +30,12 @@ const CanvasBackground = () => {
 
         // Animation function
         const drawStars = () => {
+            // Get background color from computed style
+            const computedStyle = getComputedStyle(canvas);
+            const bgColor = computedStyle.backgroundColor || '#000000';
+
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = '#000000';
+            ctx.fillStyle = bgColor;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             stars.forEach(star => {
@@ -66,7 +70,7 @@ const CanvasBackground = () => {
                 width: '100vw',
                 height: '100vh',
                 zIndex: -1,
-                backgroundColor: '#000000'
+                backgroundColor: '#000000', // Default background color
             }}
         />
     );
