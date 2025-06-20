@@ -4,9 +4,10 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Sun, Moon, Palette } from "lucide-react";
 
+// TODO: make it dynamic so light always follows dark and dark always follows light, and then it is pastel
 const themes = [
-    { id: "light", label: "Light Mode", icon: <Sun size={20} /> },
     { id: "dark", label: "Dark Mode", icon: <Moon size={20} /> },
+    { id: "light", label: "Light Mode", icon: <Sun size={20} /> },
     { id: "pastel", label: "Pastel Mode", icon: <Palette size={20} /> },
 ];
 
