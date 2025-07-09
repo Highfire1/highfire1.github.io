@@ -17,7 +17,7 @@ export default function page() {
                 <div className="relative h-52 w-full">
                     <Image
                         src="/clouds/purple.webp" fill={true}
-                        className="object-cover" alt="picture of sunset" priority
+                        className="object-cover rounded-sm" alt="picture of sunset" priority
                     />
                 </div>
 

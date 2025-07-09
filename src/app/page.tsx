@@ -19,7 +19,7 @@ export default function Home() {
         <div className="relative h-52 w-full">
           <Image
             src="/clouds/sunrise.webp" fill={true}
-            className="object-cover" alt="picture of sunrise" priority
+            className="object-cover rounded-sm" alt="picture of sunrise" priority
           />
         </div>
 
